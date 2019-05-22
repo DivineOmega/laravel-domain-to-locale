@@ -1,4 +1,5 @@
 <?php
+
 namespace DivineOmega\LaravelDomainToLocale\Http\Middleware;
 
 use Closure;
