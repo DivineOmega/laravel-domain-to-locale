@@ -19,7 +19,7 @@ class DomainToLocale
         $map = config('domain-to-locale.map');
         $host = $request->getHost();
 
-        if (array_key_exists($host, $map)) {
+        if (is_array($map) && array_key_exists($host, $map)) {
             $locale = $map[$host];
             app()->setLocale($locale);
         }
