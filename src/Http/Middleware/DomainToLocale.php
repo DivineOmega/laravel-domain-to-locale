@@ -15,7 +15,13 @@ class DomainToLocale
      */
     public function handle(Request $request, Closure $next)
     {
-        
+        $map = config('domain-to-locale.map');
+        $host = $request->getHost();
+
+        if (array_key_exists($host, $map)) {
+            $locale = $map[$host];
+            app()->setLocale($locale);
+        }
 
         return $next($request);
     }

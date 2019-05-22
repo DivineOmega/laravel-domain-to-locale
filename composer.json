@@ -11,11 +11,14 @@
     ],
     "require": {
         "php": ">=7.1",
-        "illuminate/http": "^5.6"
+        "laravel/framework": "^5.6"
     },
     "autoload": {
         "psr-4": {
             "DivineOmega\\LaravelDomainToLocale\\": "src/"
         }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8"
     }
 }
