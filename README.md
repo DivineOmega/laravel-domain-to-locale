@@ -12,7 +12,6 @@ project.
 composer require divineomega/laravel-domain-to-locale
 ```
 
-
 ## Setup
 
 This package requires you to register a global middleware
@@ -28,9 +27,8 @@ your project. To do so, simply run the following Artisan
 command.
 
 ```bash
- php artisan vendor:publish --provider=DivineOmega\LaravelDomainToLocale\ServiceProvider
+php artisan vendor:publish --provider="DivineOmega\LaravelDomainToLocale\ServiceProvider"
 ```
-
 
 ## Configuration
 
